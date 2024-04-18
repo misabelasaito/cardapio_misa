@@ -1,0 +1,146 @@
+/*CSS PROJETO CARDAPIO*/ 
+@import url('https://fonts.cdnfonts.com/css/kaneiwa-alp');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px dashed; */
+}
+
+body {
+    height: 100vh;
+    background-color: #DCDCDC;
+    background-image: url(fundo.avif);
+}
+
+#linha_topo {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+
+header {
+   background-color: #333;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+figure {
+    width: 200px;
+    height: 270px;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'KANEIWA alp regular', sans-serif;
+    margin-right: 8%;
+    color: #ffffff;
+
+}
+
+nav {
+    background-color: rgb(149, 148, 148);
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+}
+ nav ul li {
+    display: inline;
+ }
+
+ nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+ }
+
+ nav ul li a:hover {
+    background-color: gray;
+ }
+
+ section{
+    padding: 10px;
+ }
+
+.sessao {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 290px;
+    padding-bottom: 0px;
+ }
+ 
+
+
+ .card {
+   height: 400px;
+   width: 300px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   overflow: hidden;
+   overflow: hidden; /* Adicionado para esconder parte do texto quando sobreposto */
+   transition: transform 0.3s; /* Adicionado para suavizar a transformação da imagem */
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+.card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+   transform: scale(1.1); /* Aumenta o tamanho do card em 10% ao passar o mouse */
+}
+
+.card-content {
+   padding: 20px;
+}
+
+h3 {
+   margin-top: 0;
+}
+
+p {
+   margin-bottom: 10px;
+}
+
+.price {
+   font-weight: bold;
+   color: #007bff;
+}
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 30px 0;
+   text-align: center;
+}
+
+footer h3 {
+   color: #fff;
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+footer p {
+   color: #ccc;
+   margin-bottom: 5px;
+}
+
+
+
